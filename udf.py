@@ -9,7 +9,7 @@ import pandas as pd
 import xlwings as xw
 import os
 import datetime
-current_dir = 'C:\\Users\\chouw\\Desktop\\Project Sub Comp Notification\\auto_proj_updates'
+current_dir = 'C:\\Users\\proj_updates'
 @xw.sub
 def Filelist():
     """
