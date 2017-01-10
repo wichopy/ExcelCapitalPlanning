@@ -1,1 +1,19 @@
+import pandas as pd
 
+#Load excel data in pandas dataframe.
+data = pd.read_excel('RSdumpJan1forSmartsheetFCM.xlsx', sheetname='Sheet2')
+
+#verify load.
+data.head()
+
+#get unique zone list.
+FMZ_list = data['FMZ'].unique()
+FMZ_list
+
+#Splice data for each FMZ, and write to an excel file.
+
+for FMZ in FMZ_list:
+    FMZ_Data = data[data['FMZ'] == FMZ]
+    writer = pd.ExcelWriter(FMZ+"_data.xlsx", engine='xlsxwriter')
+    FMZ_Data.to_excel(writer, sheet_name = "Asset Data")
+    writer.save()
