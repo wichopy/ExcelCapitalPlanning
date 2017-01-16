@@ -1,7 +1,7 @@
 import pandas as pd
 
 #Load excel data in pandas dataframe.
-data = pd.read_excel('RSdumpJan1forSmartsheetFCM.xlsx', sheetname='Sheet2')
+data = pd.read_excel('data_dump.xlsx', sheetname='Sheet2')
 
 #verify load.
 data.head()
