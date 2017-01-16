@@ -1,2 +1,2 @@
 # ExcelCapitalPlanning
-Consolidate data from several excel sheets for easier capital planning analysis.
+Scripts and Tools used for automating capital planning tasks
