@@ -3,13 +3,14 @@ This script was written as a request from my manager to extract snippets of data
 
 The process would have taken a unnecessary long amount of time to do manually.
 
-No process was originally put in place to have data from the excel sheet filled in by field personnel to be extracted manually and 
-I had to come up with a quick automated way to do it. 
+The process was originally put in place to have data from the excel sheet filled in by field personnel to be extracted
+manually and I had to come up with a quick automated way to do it. (estimate time of someone doing this manually 
+was 3 weeks for 400 reports...and gave a spreadsheet full of errors)
 
-Luckily the data that needed to be extracted were in the same cells for all 500+ sheets.
+Luckily the data that needed to be extracted were in the same cells for all 800+ workbooks.
 
-I used the openpyxl module to extract data from the sheets with cell references, and combined all the data into a dataframe in pandas
-for export to excel.
+I used the openpyxl module to extract data from the sheets with cell references, and combined all the data into a dataframe
+in pandas for export to excel.
 
 """
 import pandas as pd
